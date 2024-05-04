@@ -1,6 +1,7 @@
 body{
     font-family: "Ubuntu", sans-serif;
 }
+/* Inicio estilo de login*/
 
 .h1_pag{
     margin-top: 50px;
@@ -26,7 +27,7 @@ label{
 
 }
 
-input{
+#usuario_login,#contraseña_login{
     width: 300px;
     height: 15px;
     padding: 10px;
@@ -36,7 +37,7 @@ input{
     display: block;
 }
 
-input:hover{
+#usuario_login,#contraseña_login:hover{
     border-color: #1e65c8;
 }
 
@@ -51,4 +52,14 @@ input:hover{
     border-radius: 2px;
     width: 100px;
     height: 30px;
+}
+/* final estilo de login*/
+
+
+/* Inicio estilo de factura*/
+
+.titulo_factura {
+    margin-top: 50px;
+    text-align: center;
+    color: #1e65c8;
 }
