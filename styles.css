@@ -27,7 +27,7 @@ label{
 
 }
 
-#usuario_login,#contraseña_login{
+input{
     width: 300px;
     height: 15px;
     padding: 10px;
@@ -37,7 +37,7 @@ label{
     display: block;
 }
 
-#usuario_login,#contraseña_login:hover{
+input:hover{
     border-color: #1e65c8;
 }
 
