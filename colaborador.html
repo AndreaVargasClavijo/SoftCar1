@@ -1,11 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colaborador SoftCar</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-    <h1>HOLA JEFE</h1>
+    <!--navegador-->
+    <nav class="nav_nav">
+        <div class="class">
+            <i class="fa-solid fa-car fa-xl" style="color: #fff;"></i></b>
+            <p>SoftCar</p>
+        </div>
+        <div>
+            <p>Colaborador: andrea</p>
+        </div>
+
+        <div class="Perfil_modal">
+            <i class="fa-regular fa-user fa-xl" style="color: #fff;"></i>
+        </div>
+    </nav>
+    <section class="modal1">
+        <div class="modal1_container">
+            <a href="">Soporte</a>
+            <a href="">Cambiar Contraseña</a>
+            <a href="index.html">Cerrar sesion</a>
+        </div>
+    </section>
+    <!--fin del navegador, llevarlo a todas las pgs-->
+    
+    <!--modal productos inicio-->
+    <section class="modal" id="modal1">
+        <div class="modal1_container">
+            <a href="" class="cerrarM" id="cerrarM1">&times;</a>
+            <h2>Ingresar producto</h2>
+            <label for="fecha_i">Fecha de ingreso</label>
+            <input type="date" id="fecha_i" name="fecha_i" required placeholder="Fecha de ingreso">
+            <input type="text" id="nombre_Productos" name="nombre_productos" required placeholder="Nombre de producto">
+            <input type="number" id="precios" name="precios" required placeholder="Precio del producto">
+            <input type="number" id="cantidad_productos" name="cantidad_productos" required placeholder="Cantidad">
+            <button class="Guardar_cerrarModal">Guardar producto</button>
+        </div>
+    </section>
+    <!--modal fin productos-->
+
+    <!--modal incio servicios-->
+    <section class="modal" id="modal2">
+        <div class="modal2_contenedor" id="modal2_contenedor">
+            <a href="" class="cerrarM" id="cerrarM2">&times;</a>
+            <h2>Agregar nuevo servicio</h2>
+            <label for="">Selecciona el tipo de mantenimiento:</label>
+            <form action="">
+                <label for="opcion1">
+                    <input type="checkbox" id="opcion1" name="M_preventivo" value="mantenimiento_preventivo"
+                        class="modal_opcion">
+                    Mantenimiento Preventivo
+                </label>
+                <label for="opcion2">
+                    <input type="checkbox" id="opcion2" name="M_correctivo" value="mantenimiento_correctivo"
+                        class="modal_opcion">
+                    Mantenimiento Correctivo
+                </label>
+                <input type="text" id="id_vehiculo" name="placa" placeholder="Ingrese placa del vehiculo"><br><br>
+                <input type="text" name="mecanico" id="id_mecanico" placeholder="asignar mecanico"><br>
+                <label for="Dianostico">Diagnostico del vehiculo</label>
+                <textarea id="Dianostico" name="Dianostico_veh" rows="3" cols="40"></textarea>
+                <label for="Nom_cliente">Datos cliente</label>
+                <input type="number" id="id_cliente" placeholder="Numero de Identificacion"><br><br>
+                <input type="text" id="Nom_cliente" name="nombres" placeholder="Ingrese nombres"><br><br>
+                <input type="text" id="Ap_cliente" name="Apellidos" placeholder="Ingrese apellidos"><br><br>
+                <label for="fecha_ingreso">Fecha de ingreso</label><br>
+                <input type="date" id="fecha_ingreso"><br><br>
+                <button class="guardar" id="guardarBtn">Guardar</button>
+            </form>
+
+        </div>
+    </section>
+    <!--modal fin servicios-->
+
+    <!--Editar Productos-->
+<section class="modal" id="modal3">
+    <div class="modal3_container">
+        <a href="" class="cerrarM" id="cerrarM3">&times;</a> 
+        <h2>Editar producto</h2>
+        <input type="text" id="id_productoaeditar" name="id_productoaeditar" required placeholder="Id del producto a editar">
+        <label for="fecha_i">Fecha de ingreso</label>
+        <input type="date" id="fecha_i" name="fecha_i" required placeholder="Fecha de ingreso">
+        <input type="text" id="nombre_Productos" name="nombre_productos" required placeholder="Nombre de producto">
+        <input type="number" id="precios" name="precios" required placeholder="Precio del producto">
+        <input type="number" id="cantidad_productos" name="cantidad_productos" required placeholder="Cantidad">
+        <button class="Guardar_cerrarModal">Guardar nuevo producto</button>
+    </div>
+</section>
+    <!-- fin Editar Productos-->
+
+    <!--inicio editar servicios-->
+
+    <section class="modal" id="modal4">
+        <div class="modal4_contenedor" id="modal4_contenedor">
+            <a href="" class="cerrarM" id="cerrarM4">&times;</a> 
+            <h2>Editar servicios</h2>
+            <input type="number" id="id_servicio" placeholder="Ingrese id servicio" required><br><br>
+            <label for="">Selecciona el tipo de mantenimiento:</label>
+            <form action="">
+                <label for="opcion1">
+                    <input type="checkbox" id="opcion1" name="M_preventivo" value="mantenimiento_preventivo"
+                        class="modal_opcion">
+                    Mantenimiento Preventivo
+                </label>
+                <label for="opcion2">
+                    <input type="checkbox" id="opcion2" name="M_correctivo" value="mantenimiento_correctivo"
+                        class="modal_opcion">
+                    Mantenimiento Correctivo
+                </label>
+                <input type="text" id="id_vehiculo" name="placa" placeholder="Ingrese placa del vehiculo"><br><br>
+                <input type="text" name="mecanico" id="id_mecanico" placeholder="asignar mecanico"><br>
+                <label for="Dianostico">Diagnostico del vehiculo</label>
+                <textarea id="Dianostico" name="Dianostico_veh" rows="3" cols="40"></textarea>
+                <label for="Nom_cliente">Datos cliente</label>
+                <input type="number" id="id_cliente" placeholder="Numero de Identificacion"><br><br>
+                <input type="text" id="Nom_cliente" name="nombres" placeholder="Ingrese nombres"><br><br>
+                <input type="text" id="Ap_cliente" name="Apellidos" placeholder="Ingrese apellidos"><br><br>
+                <label for="fecha_ingreso">Fecha de ingreso</label><br>
+                <input type="date" id="fecha_ingreso"><br><br>
+                <button class="guardar" id="guardarBtn">Guardar</button>
+            </form>
+
+        </div>
+    </section>
+
+    <!--inicio editar servicios-->
+
+    <!--tabla de los modales e informes-->
+    <div class="container">
+        <div class="buttons">
+            <button class="Boton" id="Boton1">Ingresar Producto</button>
+            <button class="Boton" id="Boton2">Ingresar Servicio</button>
+            <button class="Boton" id="Boton3">Editar productos</button>
+            <button class="Boton" id="Boton4">Editar servicios</button>
+        </div>
+
+        <div class="reports">
+            <table class="table_informes" border="1">
+                <tr>
+                    <th>Informes</th>
+                </tr>
+
+                <tr>
+                    <td><a href="informeVentas.html">Generar informe de ventas</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="informeServicios.html"><a>Generar informe de servicios</a></td>
+                </tr>
+
+                <tr>
+                    <td><a href="inventario.html"><a>Ir al inventario de productos</a></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <!-- fin tabla de los modales e informes-->
+
+
+
+    <script src="./js/main.js"></script>
 </body>
+
 </html>

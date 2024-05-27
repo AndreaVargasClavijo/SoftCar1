@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura SoftCar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="nav_nav">
+
+        <div>
+        <!-- <img class="imagen" src="assets/Softcar logo1.png" alt=""> --> 
+
+        </div>
+        <div>
+            <p>Colaborador: andrea</p>
+
+        </div>
+        <div class="link_factura">
+            <a href="colaborador.html">Volver</a>
+
+        </div>
+
+    </nav>
+
+    <div class="factura">
+        <form>
+            <h2 class="titulo_factura">Facturación electronica servicios</h2>
+            <label for="id_cliente" id="id_l_cliente">Ingrese el id del cliente:</label>
+            <input type="text" id="id_cliente" class="input_id_cliente" name="id_cliente" required>
+            <button class="Button_factura" type="submit">Buscar cliente</button>
+
+
+
+            <div class="info_factura">
+                <p>Nombre del cliente:</p>
+                <p>Placa vehiculo:</p>
+                <p>Fecha de ingreso:</p>
+                <p>Fecha de salida:</p>
+                <p>Valor servicio:</p>
+                <p>Valor del producto:</p>
+                <p>Total:</p>
+            </div>
+
+            <div class="info_direccion">
+                <p>Softcar </p>
+                <p>calle 68c #33-43 </p>
+                <p>Hora: </p>
+            </div>
+
+            <button class="Button_imprimir" type="submit">Imprimir Factura</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
